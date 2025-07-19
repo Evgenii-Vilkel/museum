@@ -20,12 +20,12 @@
                 <p>Louvre</p>
             </div>
             <ul class="header-list">
-                <li class="header-item"><a class="header-link" href="">Visiting</a></li>
-                <li class="header-item"><a class="header-link" href="">Explore</a></li>
-                <li class="header-item"><a class="header-link" href="">Video</a></li>
-                <li class="header-item"><a class="header-link" href="">Gallery</a></li>
-                <li class="header-item"><a class="header-link" href="">Tickets</a></li>
-                <li class="header-item"><a class="header-link" href="">Contacts</a></li>
+                <li class="header-item"><a class="header-link" href="#visiting">Visiting</a></li>
+                <li class="header-item"><a class="header-link" href="#explore">Explore</a></li>
+                <li class="header-item"><a class="header-link" href="#video">Video</a></li>
+                <li class="header-item"><a class="header-link" href="#gallery">Gallery</a></li>
+                <li class="header-item"><a class="header-link" href="#tickets">Tickets</a></li>
+                <li class="header-item"><a class="header-link" href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -42,16 +42,73 @@
 
 
         <section class="welcome">
-            <h1 class="header">Welcome<br> to the Louvre</h1>
-            <h2 class="welcome-second-header">From the castle to the museum</h2>
-            <button class="welcome-btn">Discover the Louvre</button>
-            <img src="assets/img/welcome-slider/1.jpg" alt="Mona Lisa">
-            <div class="welcome-slider">
-                <p>01</p>
-                <p>05</p>
-                <div class="square"></div>
-                <button></button>
-                <button></button>
+            <div class="welcome-header-box">
+                <h1 class="header">Welcome<br> to the Louvre</h1>
+                <h2 class="welcome-second-header">From the castle to the museum</h2>
+                <button class="welcome-btn">Discover the Louvre</button>
+            </div>
+            <div class="welcome-slider-box">
+                <img class="welcome-img" src="assets/img/welcome-slider/1.jpg" alt="Mona Lisa">
+                <div class="welcome-slider">
+                    <div class="welcome-slider-number-wrapper">
+                        <p class="welcome-slider-number-first">01</p>
+                        <p class="welcome-slider-line">|</p>
+                        <p class="welcome-slider-number-second">05</p>
+                    </div>
+
+
+                    <fieldset class="welcome-radio-group">
+                        <legend></legend>
+                        <div class="welcome-radio-item">
+                            <input type="radio" id="welcome-radio-btn-1" name="radio" value="1" checked>
+                            <label for="welcome-radio-btn-1" class="welcome-custom-radio"></label>
+                        </div>
+                        <div class="welcome-radio-item">
+                            <input type="radio" id="welcome-radio-btn-2" name="radio" value="2">
+                            <label for="welcome-radio-btn-2" class="welcome-custom-radio"></label>
+                        </div>
+                        <div class="welcome-radio-item">
+                            <input type="radio" id="welcome-radio-btn-3" name="radio" value="3">
+                            <label for="welcome-radio-btn-3" class="welcome-custom-radio"></label>
+                        </div>
+                        <div class="welcome-radio-item">
+                            <input type="radio" id="welcome-radio-btn-4" name="radio" value="4">
+                            <label for="welcome-radio-btn-4" class="welcome-custom-radio"></label>
+                        </div>
+                        <div class="welcome-radio-item">
+                            <input type="radio" id="welcome-radio-btn-5" name="radio" value="5">
+                            <label for="welcome-radio-btn-5" class="welcome-custom-radio"></label>
+                        </div>
+                    </fieldset>
+
+
+                    <!-- <fieldset class="welcome-arrow-group">
+                        <legend></legend>
+                        <div class="welcome-arrow-left">
+                            <input type="button" name="arrow-left" id="arrow-left" value="left">
+                            <label for="arrow-left"></label>
+                        </div>
+                        <div class="welcome-arrow-right">
+                            <input type="button" name="arrow-right" id="arrow-right" value="right">
+                            <label for="arrow-right"></label>
+                        </div>
+                    </fieldset> -->
+                    <fieldset class="welcome-arrow-group">
+                        <legend></legend>
+                        <button class="welcome-arrow-left">
+                            <svg class="welcome-arrow-left-svg" width="30" height="8" viewBox="0 0 30 8" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.72254 8.00024C3.90173 6.31363 1.99422 5.08286 0 4.30794V3.69255C1.99422 2.89483 3.90173 1.66406 5.72254 0.000244141H7.23988C6.37283 1.43614 5.53468 2.53016 4.72543 3.2823H30V4.71819H4.72543C5.53468 5.47033 6.37283 6.56435 7.23988 8.00024H5.72254Z"/>
+                                </svg>
+                        </button>
+                        <button class="welcome-arrow-right">
+                            <svg class="welcome-arrow-right-svg" width="30" height="8" viewBox="0 0 30 8" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.72254 8.00024C3.90173 6.31363 1.99422 5.08286 0 4.30794V3.69255C1.99422 2.89483 3.90173 1.66406 5.72254 0.000244141H7.23988C6.37283 1.43614 5.53468 2.53016 4.72543 3.2823H30V4.71819H4.72543C5.53468 5.47033 6.37283 6.56435 7.23988 8.00024H5.72254Z"/>
+                                </svg>
+                        </button>
+                    </fieldset>
+
+
+                </div>
             </div>
         </section>
         
@@ -64,8 +121,50 @@
         
         
         
-        <section class="visiting">
+        <section class="visiting" id="visiting">
             <h2 class="header">Virtual tour</h2>
+
+
+            <article class="visiting-card">
+                <img src="./assets/img/" alt="">
+                <h3 class="tour"></h3>
+                <p></p>
+                <p></p>
+            </article>
+            <article class="visiting-card">
+                <img src="" alt="">
+                <h3 class="tour"></h3>
+                <p></p>
+                <p></p>
+            </article>
+            <article class="visiting-card">
+                <img src="" alt="">
+                <h3 class="tour"></h3>
+                <p></p>
+                <p></p>
+            </article>
+            <article class="visiting-card">
+                <img src="" alt="">
+                <h3 class="tour"></h3>
+                <p></p>
+                <p></p>
+            </article>
+            <article class="visiting-card">
+                <img src="" alt="">
+                <h3 class="tour"></h3>
+                <p></p>
+                <p></p>
+            </article>
+            <article class="visiting-card">
+                <img src="" alt="">
+                <h3 class="tour"></h3>
+                <p></p>
+                <p></p>
+            </article>
+
+
+
+
             <h3 class="tour">Royal Palace</h3>
             <h3 class="tour">Denon Wing</h3>
             <h3 class="tour">Colonnade Perrault</h3>
@@ -82,7 +181,7 @@
         
         
         
-        <section class="explore">
+        <section class="explore" id="explore">
             <h2 class="header">Picture explore</h2>
             
         </section>
@@ -95,7 +194,7 @@
         
         
         
-        <section class="video">
+        <section class="video" id="video">
             <h2 class="header">Video journey</h2>
             
         </section>
@@ -108,7 +207,7 @@
         
         
         
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <h2 class="header">Art Gallery</h2>
             
         </section>
@@ -121,7 +220,7 @@
 
 
         
-        <section class="tickets">
+        <section class="tickets" id="tickets">
             <h2 class="header">Buy tickets</h2>
             <button class="tickets-btn"></button>
         </section>
@@ -134,7 +233,7 @@
 
 
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <h2 class="header">Contacts</h2>
 
         </section>

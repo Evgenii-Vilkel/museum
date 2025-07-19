@@ -2,23 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     cursor: default;
 }
-
-
+html {
+    scroll-behavior: smooth;
+}
 body {
 max-width: 1920px;
 font-size: 18px;
 margin: 0 auto;
 }
-
 li, a, button {
     text-decoration: none;
     list-style: none;
     
 }
-
 button {
     border: 1px solid #030303;
 }
@@ -30,7 +29,9 @@ button {
     text-transform: uppercase;
     font-weight: 300;
 }
-
+section {
+    scroll-margin-top: 150px;
+}
 
 
 
@@ -38,14 +39,19 @@ button {
 /*************************header start************************/
 .header-page {
     display: flex;
+    max-width: 1920px;
+    width: 100%; 
     background-color: #030303;
     color: #fff;
     height: 150px;
     align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
 }
 .header-nav {
     display: flex;
-    margin: 0 240px;
+    margin: 0 12.5%;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +79,12 @@ button {
     color: #fff;
     cursor: default;
 }
+.header-link:hover {
+    color: #9D8665;
+}
+.header-link:active {
+    color: #7E6C51;
+}
 
 /*************************header end************************/
 
@@ -81,17 +93,25 @@ button {
 
 .welcome {
     width: 100%;
-    height: 842+150px;
     background-color: #030303;
-    color: #fff;
+    color: #fff;    
 }
 
+.welcome-header-box {
+    max-width: fit-content;
+    margin-left: 12.5%;
+    margin-top: 300px;
+    z-index: 1;
+    position: absolute;
 
+}
 .welcome-second-header {
     font-family: "Roboto", sans-serif;
     font-size: 28px;
     font-weight: 300;
     letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 75px;
 }
 .welcome-btn {
     width: 360px;
@@ -106,9 +126,141 @@ button {
 
     background-color: #710707;
 }
+.welcome-btn:hover {
+    background-color: #9D8665;
+}
+
+
+
+
+
+
+.welcome-slider-box {
+    position: relative;
+    width: 1000px;
+    height: 810px;
+    margin-left: 680px;
+    margin-top: 150px;
+}
+.welcome-img {
+    max-width: fit-content;
+    z-index: 0;
+}
 .welcome-slider {
-    width: 600px;
-    height: 120px;
+    position: absolute;
+    top: 690px;
+    right: 0;
     display: flex;
     align-items: center;
+    width: 600px;
+    height: 120px;
+    z-index: 1;
+    background-color: #030303;
+}
+.welcome-slider-number-wrapper {
+    display: flex;
+    margin-left: 74px;
+}
+.welcome-slider-number-first,
+.welcome-slider-line,
+.welcome-slider-number-second {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400px;
+    line-height: 40px;
+}
+.welcome-slider-line {
+    margin: 0 10px;
+}
+
+
+
+.welcome-radio-group {
+    display: flex;
+    gap: 25px;
+    margin-left: 55px;
+    border: 0;
+}
+.welcome-radio-item input[type='radio'] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.welcome-radio-item label {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+
+}
+.welcome-radio-item input[type='radio']:checked + label {
+    background-color: #D2B183;
+    border: 0;
+}
+.welcome-radio-item input[type='radio']:hover + label {
+    background-color: #9D8665;
+    border: 0;
+}
+
+
+
+
+.welcome-arrow-group {
+    display: flex;
+    gap: 20px;
+    margin-left: 45px;
+    border: 0;
+}
+.welcome-arrow-left,
+.welcome-arrow-right {
+    background: none;
+    border: none;
+}
+.welcome-arrow-left-svg,
+.welcome-arrow-right-svg {
+    cursor: pointer;
+    height: 100%;
+    padding: 10px 0;
+}
+.welcome-arrow-right-svg {
+    transform: rotate(180deg);
+}
+.welcome-arrow-left-svg:hover,
+.welcome-arrow-right-svg:hover {
+    fill: #9D8665;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visiting {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+}
+.visiting .header {
+    color: #9D8665;
+    width: 100%;
+}
+.visiting .header::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #710707;
 }
