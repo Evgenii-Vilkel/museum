@@ -483,12 +483,15 @@ section {
 
 
 
-
 .gallery {
+    background-color: #030303;
+}
+.gallery-wrapper {
     width: 75%;
     margin: 0 auto;
     position: relative;
     padding: 75px 0;
+    background-color: #030303;
 }
 .gallery .header {
     color: #9D8665;
@@ -504,7 +507,21 @@ section {
     border-bottom: 3px solid #710707;
 }
 
+.gallery-img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 36px;
+}
 
+.gallery-img-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.column-margin {
+
+    margin-top: 50px;
+}
 
 
 
